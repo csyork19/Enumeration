@@ -34,4 +34,7 @@ find / -perm -o x -type d 2>/dev/null
 printf "\n*---- Print files with SUID bit set ----\n\n"
 find / -perm -u=s -type f 2>/dev/null
 
+printf "\n---- Cron Jobs ----\n\n"
+cat /etc/crontab
+
 
